@@ -1,0 +1,41 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 5px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.letter {
+  font-weight: 700;
+  background-color: lightgray;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 35px;
+
+  font-size: 18px;
+
+  &.correct {
+    background-color: seagreen;
+    color: #fff;
+  }
+
+  &.misplaced {
+    background-color: gold;
+    color: #fff;
+  }
+
+  &.incorrect {
+    background-color: dimgray;
+    color: #fff;
+  }
+}
