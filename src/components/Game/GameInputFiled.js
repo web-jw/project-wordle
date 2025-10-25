@@ -1,5 +1,3 @@
-import React from 'react';
-
 function GameInputField({ value, setValue, result, submitGuess }) {
   return (
     <form className='guess-input-wrapper' onSubmit={submitGuess}>
@@ -9,6 +7,7 @@ function GameInputField({ value, setValue, result, submitGuess }) {
         type='text'
         pattern='[A-Z]{5}'
         autoComplete='false'
+        title='5 letter word'
         maxLength={5}
         minLength={5}
         value={value}
